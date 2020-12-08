@@ -35,4 +35,4 @@ function translate(str) {
 
  // }
 
-  console.log(translate('Suguna'));
+  //console.log(translate('Suguna'));

@@ -90,7 +90,11 @@ console.log(submissions);
 ○ Functionality: return the object in the array that has the provided name. Use the
 find method. */
 
+<<<<<<< HEAD
 function findSubmissionByName(array,findName){
+=======
+/*function findSubmissionByName(array,findName){
+>>>>>>> 20cf148d9798171174c437c3e37261b5313dd845
     
   const dispName = submissions.find(submissions => submissions.name === findName);
   console.log(dispName);
