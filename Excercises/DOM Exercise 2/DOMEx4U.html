@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+ 
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="DOMEx4U.css">
+</head>
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <h1>DOM Exercise 4</h1>
+
+    <!--<h3>Total Number of coins:<span class="coinCount">{{coin count goes here}}</span></h3> -->
+    <form id='formInput'>
+        <!-- input -->
+       <div class="how-many" >
+        <label>How many?
+        <input name="how-many" id="how-many" type="number" value="value"/></label>
+       </div> 
+         
+        <div class="which-coin">
+            <label>Which coin?
+            <select name="which-coin" id="which-coin">
+              <optgroup>
+                <option class="white" value="penny">Penny</option>
+                <option class="blue" value="nickel">Nickel</option>
+                <option class="yellow" value="dime">Dime</option>
+                <option class="gray" value="quarter">Quarter</option>
+            </optgroup>
+           </select></label>
+         </div> 
+         <button id="btn">Make Money!</button>
+        <!---- <div class="submit">
+            <input type="submit" value="Make Money">
+         </div> -->
+        </form>
+        <div id="coin" class="coin"></div>
+        <h3 id="coinCnt"></h3>
+        
+    
+    <script>
+        document.querySelector('.coin').addEventListener('click', function(e) {
+            const coin = e.target;
+            coin.remove();
+            let coinCount = document.getElementById("coin").childElementCount;
+            document.getElementById("coinCnt").innerHTML = "Total Number of Coins :" + coinCount;
+        })
+        
+    </script>
+    <script src="./DOMEx4.js"></script>
+         
+</body>
+</html>
