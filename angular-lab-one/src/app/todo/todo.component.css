@@ -1,0 +1,49 @@
+.todolist {
+	background:#ff69b4;
+    font-family:Open Sans;
+    font-size: 300;
+
+}
+h1,h3 {
+	color : #000000;
+	text-align : center;
+    font-family: "SIMPSON";
+    margin: 0;
+    padding: 0;
+}
+
+.todo-container{
+    display:flex;
+}
+
+.filterbtn,.add-todo{
+ max-width: 1024px;
+ margin: 0 auto;
+}
+
+.filterbox,.addInput{
+align-self: center;
+margin: 0 auto;
+width: 300px;
+height: 30px;
+}
+
+.more-info,.add-btn{
+ max-width: 1024px;
+ margin: 0 auto;
+}
+
+.todo-contents {
+flex: 1;
+}
+
+.addBtn {
+    border-radius: 5px;
+    border: 1px solid #ff1493;
+    background-color:white;
+    color: #ff1493;
+    padding: 5px 2px;
+    width: 30%;
+}
+
+
